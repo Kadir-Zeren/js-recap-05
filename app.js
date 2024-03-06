@@ -71,15 +71,39 @@
 // const num = prompt("Please enter a number:");
 // console.log(`${num} is ${isEvenOrOdd(num)}`);
 
-const yazdir = function (message) {
-  console.log(message);
+// const yazdir = function (message) {
+//   console.log(message);
+// };
+
+// yazdir("Hello FS14");
+
+// let oddEven = function (number) {
+//   return number % 2 === 0 ? "EVEN" : "ODD";
+// };
+
+// console.log(oddEven(5));
+// console.log(oddEven(2));
+
+const kareAl = (num) => num * num;
+const topla = (s1, s2) => s1 + s2;
+const ciktiVer = () => console.log("Merhaba");
+
+console.log("KARE:", kareAl(4));
+console.log("TOPLA:", topla(4, 5));
+ciktiVer();
+
+const findBiggest = (n1, n2, n3) => {
+  let biggest = n1;
+  if (n2 >= biggest) {
+    biggest = n2;
+  }
+  if (n3 >= biggest) {
+    biggest = n3;
+  }
+  return biggest;
 };
 
-yazdir("Hello FS14");
+console.log("BIGGEST:", findBiggest(1, 3, 2));
 
-let oddEven = function (number) {
-  return number % 2 === 0 ? "EVEN" : "ODD";
-};
-
-console.log(oddEven(5));
-console.log(oddEven(2));
+const findBiggestShort = (num1, num2, num3) => Math.max(num1, num2, num3);
+console.log("BIGGEST:", findBiggest(1, 3, 2));
